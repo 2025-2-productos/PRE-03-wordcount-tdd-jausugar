@@ -4,15 +4,14 @@ import os
 import shutil
 import sys
 
-# python3 -m homework data/input data/output
-from ...wordcount import (
-    count_words,
-    parse_args,
-    preprocess_lines,
-    split_into_words,
-    write_word_count,
-)
+from ..count_words import count_words
+from ..preprocess_lines import preprocess_lines
 from ..read_all_lines import read_all_lines
+from ..split_into_words import split_into_words
+
+# python3 -m homework data/input data/output
+from ..wordcount import parse_args
+from ..write_word_counts import write_word_count
 
 
 def test_parse_args():
